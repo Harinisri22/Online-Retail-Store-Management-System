@@ -1,29 +1,83 @@
-# Online Retail Store Management System (MySQL)
+# 🛒 Online Retail Store Management System (MySQL)
 
-## Project Overview
-This project is a **MySQL-based Online Retail Store Management System** designed to simulate the backend database of an e-commerce platform. It manages products, customers, orders, payments, shipping, employees, and inventory, providing a full lifecycle of retail operations.
+[![MySQL](https://img.shields.io/badge/MySQL-005C84?style=for-the-badge&logo=mysql&logoColor=white)](https://www.mysql.com/)  
+[![SQL](https://img.shields.io/badge/SQL-00758F?style=for-the-badge&logo=sql&logoColor=white)](https://www.mysql.com/)
 
-## Features
-- **Database Design:** 10 relational tables including `Customers`, `Products`, `Orders`, `Order_Items`, `Payments`, `Shipping`, `Employees`, `Categories`, `Suppliers`, and `Inventory_Log`.
-- **Data Integrity:** Enforced with **primary keys, foreign keys, constraints**, and **data types** to maintain consistency.
-- **Automation & Business Logic:**
-  - Triggers to automatically update inventory when an order is placed.
-  - Stored procedure `place_order` to handle order placement and stock adjustments.
-- **Sample Data:** Preloaded with customers, products, orders, payments, shipping, and inventory logs to simulate real-world transactions.
-- **Reports & Analysis:**
-  - Revenue per month for the last 12 months.
-  - Total sales per product and top customers by spend.
-  - Low-stock product alerts.
-  - Orders without payment and employees handling most shipments.
-- **CRUD Operations:** Examples provided for creating, reading, updating, and deleting products.
+---
 
-## Tools & Technologies
-- **Database:** MySQL
-- **SQL Concepts Used:** Joins, Subqueries, Aggregate Functions (`SUM`, `COUNT`), `GROUP BY`, `ORDER BY`, Triggers, Stored Procedures.
+## 🚀 Project Overview
+A **MySQL-based Online Retail Store Management System** to simulate a real-world e-commerce store.  
+It manages **customers, products, suppliers, orders, payments, shipping, and inventory** using relational database structures.  
+Includes **stored procedures, triggers, transactions, and analytical queries** for end-to-end retail operations.  
 
-## Use Cases
-- Manage online retail operations and track product inventory.
-- Monitor customer purchases, payments, and order shipments.
-- Generate business reports for revenue analysis and decision-making.
-- Automate stock management using triggers and procedures.
+---
 
+## 🗂️ Database Structure
+
+**Database Name:** `Online_Retail`  
+
+**Tables:**  
+- **Customers** – Customer details with contact info and address.  
+- **Categories** – Product categories with descriptions.  
+- **Suppliers** – Supplier information.  
+- **Products** – Catalog of products with stock, price, and category.  
+- **Employees** – Staff handling orders and shipping.  
+- **Orders** – Customer orders with status and total amount.  
+- **Order_Items** – Items in each order.  
+- **Payments** – Payment details for orders.  
+- **Shipping** – Shipping info including assigned employee and tracking.  
+- **Inventory_Log** – Tracks stock changes (IN, OUT, ADJUST).  
+
+---
+
+## ⚙️ Key Features
+
+### Stored Procedure
+- **`place_order`** – Handles transactional order placement and returns order ID.  
+
+### Trigger
+- **`trg_after_order_item_insert`** – Automatically updates stock and logs inventory changes when a new order item is inserted.  
+
+### Analytics Queries
+- Total sales per product  
+- Monthly revenue report  
+- Top 5 customers by spend  
+- Products low on stock  
+- Employees handling most shipments  
+- Orders without payments  
+
+### CRUD Operations
+- Add, read, update, and delete products  
+- Supports soft delete using `is_active` flag  
+
+---
+
+## 💾 Sample Data
+- Categories: Electronics, Apparel, Home & Kitchen, Sports, Books, Toys, Beauty, Furniture, Groceries, Automotive  
+- Products: Smartphones, laptops, clothing, kitchen appliances, toys, books, beauty products, furniture, groceries  
+- Customers & Employees: Realistic sample data to simulate store operations  
+
+---
+
+## 🛠️ Technologies & Concepts Used
+- **MySQL 8+**  
+- Relational database design with **primary/foreign keys, constraints, indexes**  
+- **Transactions** for safe order processing  
+- **Stored procedures & triggers**  
+- Aggregate functions, **GROUP BY, JOINs**, and complex queries  
+
+---
+
+## 📂 How to Use
+1. Open **MySQL Workbench**.  
+2. Import the `Online_Retail.sql` file.  
+3. Execute step-by-step to create the database, tables, triggers, stored procedures, and sample data.  
+4. Run **`place_order`** to simulate placing orders.  
+5. Execute example queries to analyze **sales, revenue, inventory, and employee performance**.  
+
+---
+
+## 🎯 Project Benefits
+- Demonstrates **real-world retail database operations**.  
+- Helps understand **inventory, order, payment, and shipping workflows**.  
+- Ideal for learning **advanced MySQL features** like triggers, stored procedures, and transactions.  
