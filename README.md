@@ -68,15 +68,6 @@ Includes **stored procedures, triggers, transactions, and analytical queries** f
 
 ---
 
-## 📂 How to Use
-1. Open **MySQL Workbench**.  
-2. Import the `Online_Retail.sql` file.  
-3. Execute step-by-step to create the database, tables, triggers, stored procedures, and sample data.  
-4. Run **`place_order`** to simulate placing orders.  
-5. Execute example queries to analyze **sales, revenue, inventory, and employee performance**.  
-
----
-
 ## 🎯 Project Benefits
 - Demonstrates **real-world retail database operations**.  
 - Helps understand **inventory, order, payment, and shipping workflows**.  
