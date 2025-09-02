@@ -19,7 +19,7 @@ This project is a **MySQL-based Online Retail Store Management System** designed
 
 ## Tools & Technologies
 - **Database:** MySQL
-- **SQL Concepts Used:** Joins, Subqueries, Aggregate Functions (`SUM`, `COUNT`), `GROUP BY`, `ORDER BY`, Triggers, Stored Procedures, Transactions, JSON handling.
+- **SQL Concepts Used:** Joins, Subqueries, Aggregate Functions (`SUM`, `COUNT`), `GROUP BY`, `ORDER BY`, Triggers, Stored Procedures.
 
 ## Use Cases
 - Manage online retail operations and track product inventory.
@@ -27,8 +27,3 @@ This project is a **MySQL-based Online Retail Store Management System** designed
 - Generate business reports for revenue analysis and decision-making.
 - Automate stock management using triggers and procedures.
 
-## How to Run
-1. Install MySQL and create a new database.
-2. Execute the full SQL script to create tables, insert sample data, triggers, and procedures.
-3. Run queries or call the stored procedure `place_order` to simulate orders.
-4. Use example queries to generate reports and insights.
