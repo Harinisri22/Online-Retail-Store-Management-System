@@ -1,74 +1,83 @@
-# 🛒 Online Retail Store Management System (MySQL)
+# 🛒 Online Retail Store Management System 
 
 [![MySQL](https://img.shields.io/badge/MySQL-005C84?style=for-the-badge&logo=mysql&logoColor=white)](https://www.mysql.com/)  
 [![SQL](https://img.shields.io/badge/SQL-00758F?style=for-the-badge&logo=sql&logoColor=white)](https://www.mysql.com/)
 
 ---
 
-## 🚀 Project Overview
-A **MySQL-based Online Retail Store Management System** to simulate a real-world e-commerce store.  
-It manages **customers, products, suppliers, orders, payments, shipping, and inventory** using relational database structures.  
-Includes **stored procedures, triggers, transactions, and analytical queries** for end-to-end retail operations.  
+## 🚀 Project Overview  
+A **SQL-based Online Retail Store Management System** designed to manage and analyze retail operations.  
+This project covers **customers, products, suppliers, employees, stores, orders, payments, deliveries, and inventory**.  
+It includes **30+ SQL queries** to provide business insights like sales, revenue, top customers, stock alerts, and pending payments.  
 
 ---
 
-## 🗂️ Database Structure
+## 🗂️ Database Structure  
 
-**Database Name:** `Online_Retail`  
+**Database Name:** `Online_Retail_Store`  
 
 **Tables:**  
-- **Customers** – Customer details with contact info and address.  
-- **Categories** – Product categories with descriptions.  
-- **Suppliers** – Supplier information.  
-- **Products** – Catalog of products with stock, price, and category.  
-- **Employees** – Staff handling orders and shipping.  
-- **Orders** – Customer orders with status and total amount.  
-- **Order_Items** – Items in each order.  
-- **Payments** – Payment details for orders.  
-- **Shipping** – Shipping info including assigned employee and tracking.  
-- **Inventory_Log** – Tracks stock changes (IN, OUT, ADJUST).  
+- **Customers** – Customer details (name, contact, city).  
+- **Suppliers** – Supplier details with contact information.  
+- **Categories** – Product categories.  
+- **Products** – Catalog of products with category, price, and stock.  
+- **Employees** – Staff details, roles, and store assignments.  
+- **Stores** – Different store branches with managers.  
+- **Orders** – Customer orders with date and status.  
+- **Order_Items** – Products inside each order.  
+- **Payments** – Tracks payment mode, amount, and status.  
+- **Deliveries** – Shipment tracking for orders.  
+- **Inventory** – Store-level stock availability.  
 
 ---
 
-## ⚙️ Key Features
+## ⚙️ Key Features  
 
-### Stored Procedure
-- **`place_order`** – Handles transactional order placement and returns order ID.  
+**Stored procedures & triggers**  
+**Aggregate functions, GROUP BY, JOINs, and complex queries**  
 
-### Trigger
-- **`trg_after_order_item_insert`** – Automatically updates stock and logs inventory changes when a new order item is inserted.  
+**Core Functionalities**  
+- Customer, Supplier, Employee & Store Management  
+- Product catalog with categories & stock  
+- Orders and order item management (cart system)  
+- Payments (Card, UPI, COD, Net Banking)  
+- Deliveries & shipping details  
+- Inventory management across stores  
 
-### Analytics Queries
-- Total sales per product  
-- Monthly revenue report  
-- Top 5 customers by spend  
-- Products low on stock  
-- Employees handling most shipments  
-- Orders without payments  
-
-### CRUD Operations
-- Add, read, update, and delete products  
-- Supports soft delete using `is_active` flag  
-
----
-
-## 💾 Sample Data
-- Categories: Electronics, Apparel, Home & Kitchen, Sports, Books, Toys, Beauty, Furniture, Groceries, Automotive  
-- Products: Smartphones, laptops, clothing, kitchen appliances, toys, books, beauty products, furniture, groceries  
-- Customers & Employees: Realistic sample data to simulate store operations  
+**Business Queries (30+)**  
+- List all products with stock levels  
+- Customers grouped by city  
+- Top 5 expensive products  
+- Orders placed on a specific date  
+- Store-wise total sales  
+- Payments pending  
+- Monthly revenue analysis  
+- Top 5 customers by spending  
+- Low stock alerts  
+- Fraud/suspicious order detection  
 
 ---
 
-## 🛠️ Technologies & Concepts Used
-- **MySQL 8+**  
-- Relational database design with **primary/foreign keys, constraints, indexes**  
-- **Transactions** for safe order processing  
-- **Stored procedures & triggers**  
-- Aggregate functions, **GROUP BY, JOINs**, and complex queries  
+## 📑 Demo Records  
+- Customers: From multiple cities for realistic segmentation  
+- Products: Electronics, Apparel, Groceries, Furniture, Books, Beauty items  
+- Stores: Multiple branches across locations  
+- Employees: Assigned to different stores  
+- Orders: Mix of paid, unpaid, and pending deliveries  
 
 ---
 
-## 🎯 Project Benefits
-- Demonstrates **real-world retail database operations**.  
-- Helps understand **inventory, order, payment, and shipping workflows**.  
-- Ideal for learning **advanced MySQL features** like triggers, stored procedures, and transactions.  
+## 🌟 Project Highlights  
+- Demonstrates real-world retail database operations  
+- Helps understand inventory, order, payment, and delivery workflows  
+- Ideal for learning advanced SQL concepts including joins, constraints, and analytical queries  
+
+---
+
+## 🛠️ Technologies & Concepts Used  
+- **MySQL / SQL**  
+- Relational schema with **primary/foreign keys**  
+- **Joins, GROUP BY, Aggregate functions**  
+- Business intelligence queries  
+- Data integrity with **constraints**  
+- **Demo Records** for simulation  
